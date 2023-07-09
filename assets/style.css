@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(82, 119, 170);
+    padding: 15px;
+}
