@@ -1,14 +1,54 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
     display: block;
 }
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: aliceblue;
-    background-color: rgb(82, 119, 170);
+    background-color: rgb(83, 147, 237);
     padding: 15px;
+    margin: 0px;
+}
+
+div {
+    margin: 20px;
+}
+
+.container-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+}
+
+.container-grid:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    background-color: red !important;
+}
+
+button {
+    width: 182px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(205, 205, 250);
+}
+
+.container {
+    border: solid 2px;
+    padding: 20px;
+    
+}
+
+.card {
+    padding: 10px;
+    color: aliceblue;
+    background-color: rgba(1, 1, 117, 0.953);
 }
