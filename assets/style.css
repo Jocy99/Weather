@@ -5,50 +5,81 @@
     box-sizing: border-box;
     display: block;
 }
-
+/* puts the header on the top page */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: aliceblue;
-    background-color: rgb(83, 147, 237);
+    background-color: rgb(24 66 126);
     padding: 15px;
     margin: 0px;
 }
-
+/* this is the search bar where the user inserts desired city name */
+input {
+    display: flex;
+    text-align: center;
+    width: 195px;
+    height: 30px;
+    border-radius: 15px;
+}
+/* this div controls the local storage city's that we want to display */
+.local-storage {
+    display: flex;
+    flex-direction: column;
+}
 div {
     margin: 20px;
 }
-
+/* wraps the entire page and elements into this container */
 .container-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 30%);
     grid-template-rows: repeat(2);
 }
-
+/* supposed to control the first e;e,emts child? */
 .container-grid:nth-child(1) {
     grid-column-start: 1;
     grid-row-start: 2;
     background-color: red !important;
 }
-
-button {
-    width: 182px;
-    height: 20px;
-    border-radius: 10px;
+/* displays the five day forecast container */
+.forecast {
+    grid-column-start: 2;
+   display: grid;
+   grid-template-columns: 1;
+   /* display: flex; */
+   /* display: inline-flex; */
+   /* display: grid;
+   grid-column: 2; */
+}
+/* selects search button */
+.searchBtn {
+    width: 195px;
+    height: 30px;
+    border-radius: 15px;
     background-color: rgb(205, 205, 250);
 }
-
+/* holds the choosen city's current weather */
 .container {
     border: solid 2px;
     padding: 20px;
-    
+    width: 60vw;
 }
 
+.card-container {
+    width: 60vw;
+}
+/* controls the forecast cards */
 .card {
-    padding: 10px;
+    width: 15%;
+    height: 140px;
+    margin: 2%;
+    padding: 15px;
     color: aliceblue;
     background-color: rgba(1, 1, 117, 0.953);
+    display: flex;
+    display: inline-block;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Weather Forecast</title> -->
+    <title>Weather Forecast</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -16,61 +16,76 @@
         <div>
             <h2><strong> Search for a City:</strong></h2>
             <br>
-            <form> <input placeholder="San Diego"> </input></form>
+            <input id="citySearch" type="text" placeholder="Enter City Name" spellcheck="false">
             <br>
-            <button> Search</button>
+            <button class="searchBtn"> Search</button>
             <br>
-            Here we will add the past searched cities linked through our local storage
+            <div class="local-storage">
+                <!-- Here we will add the past searched cities linked through our local storage -->
+                <!-- <input type="text" placeholder="first city">
+                <input type="text" placeholder="second city">
+                <input type="text" placeholder="third city"> -->
+                <!-- should I make these an UL?^^^^^ -->
+            </div>
         </div>
         <div class="container">
-            <h1>City (07/11/2023)</h1>
+            <h1 class="city">City</h1>
+            <h1 class="date">(07/11/2023)</h1>
             <ul>
-                <li> Temp: </li>
-                <li> Wind: </li>
-                <li> Humidity: </li>
+                <li class="current-temp"> Temp: </li>
+                <li class="current-wind"> Wind: </li>
+                <li class="curremt-humidity"> Humidity: </li>
             </ul>
         </div>
+        <!-- these divs display the five day forecast in cards -->
         <div class="forecast">
             <h2> 5-Day Forecast:</h2>
-            <div class="card">
-                <h3> Date:</h3>
-                <ul>
-                    <li> Temp: </li>
-                    <li> Wind: </li>
-                    <li> Humidity: </li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3> Date:</h3>
-                <ul>
-                    <li> Temp: </li>
-                    <li> Wind: </li>
-                    <li> Humidity: </li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3> Date:</h3>
-                <ul>
-                    <li> Temp: </li>
-                    <li> Wind: </li>
-                    <li> Humidity: </li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3> Date:</h3>
-                <ul>
-                    <li> Temp: </li>
-                    <li> Wind: </li>
-                    <li> Humidity: </li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3> Date:</h3>
-                <ul>
-                    <li> Temp: </li>
-                    <li> Wind: </li>
-                    <li> Humidity: </li>
-                </ul>
+            <div class="card-container">
+                <div class="card">
+                    <h3> Date:</h3>
+                    <br>
+                    <ul>
+                        <li> Temp: </li>
+                        <li> Wind: </li>
+                        <li> Humidity: </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3> Date:</h3>
+                    <br>
+                    <ul>
+                        <li> Temp: </li>
+                        <li> Wind: </li>
+                        <li> Humidity: </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3> Date:</h3>
+                    <br>
+                    <ul>
+                        <li> Temp: </li>
+                        <li> Wind: </li>
+                        <li> Humidity: </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3> Date:</h3>
+                    <br>
+                    <ul>
+                        <li> Temp: </li>
+                        <li> Wind: </li>
+                        <li> Humidity: </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3> Date:</h3>
+                    <br>
+                    <ul>
+                        <li> Temp: </li>
+                        <li> Wind: </li>
+                        <li> Humidity: </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
