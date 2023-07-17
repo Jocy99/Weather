@@ -2,11 +2,11 @@ var apiKey = 'ec0abd7563a7622e43e501bd5d7eefbc';
 var forecastApiUrl = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=';
 var currentWeatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&q=';
 
-// is this url workinh? or is it my api key?
-var choosenCity = document.querySelector('#citySearch');
+// selects users city search by name input 
+var choosenCity = document.querySelector('#cityInput');
 var searchBtn = document.querySelector('.searchBtn');
 
-// 
+// fetches weather info from api 
 async function checkWeather(cityField) {
     // Request 1: Current Weather
     var currentWeatherResponse =  await fetch(currentWeatherApiUrl + cityField + '&appid=' + apiKey);
@@ -22,11 +22,11 @@ async function checkWeather(cityField) {
     console.log(forecastWeatherData.list[0]);
     var data = forecastWeatherData.list[0];
     document.querySelector('.city').innerHTML = data.city.name;
-    document.querySelector('.date').innerHTML = data.dt_txt;
+    document.querySelector('.current-date').innerHTML = data.dt_txt;
     document.querySelector('.current-temp').innerHTML = Math.round(data.main.temp) + 'F';
     document.querySelector('.current-wind').innerHTML = data.wind.speed + 'km/h';
     document.querySelector('.current-humidity').innerHTML = data.name.humidity + '%';
-    // console.log('HI!!!')
+    
 }
 
 searchBtn.addEventListener('click', ()=>{

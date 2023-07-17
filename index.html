@@ -16,21 +16,19 @@
         <div>
             <h2><strong> Search for a City:</strong></h2>
             <br>
-            <input id="citySearch" type="text" placeholder="Enter City Name" spellcheck="false">
+            <input id="cityInput" type="text" placeholder="Enter City Name" spellcheck="false">
             <br>
             <button class="searchBtn"> Search</button>
             <br>
             <div class="local-storage">
-                <!-- Here we will add the past searched cities linked through our local storage -->
-                <!-- <input type="text" placeholder="first city">
-                <input type="text" placeholder="second city">
-                <input type="text" placeholder="third city"> -->
-                <!-- should I make these an UL?^^^^^ -->
+                <ol>
+                    <!-- here is where the local stprage of the recent searches will go -->
+                </ol>
             </div>
         </div>
         <div class="container">
             <h1 class="city">City</h1>
-            <h1 class="date">(07/11/2023)</h1>
+            <h1 class="current-date">(07/11/2023)</h1>
             <ul>
                 <li class="current-temp"> Temp: </li>
                 <li class="current-wind"> Wind: </li>
@@ -41,7 +39,7 @@
         <div class="forecast">
             <h2> 5-Day Forecast:</h2>
             <div class="card-container">
-                <div class="card">
+                <div class="card" id="dayOne">
                     <h3> Date:</h3>
                     <br>
                     <ul>
@@ -50,7 +48,7 @@
                         <li> Humidity: </li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="card" id="dayTwo">
                     <h3> Date:</h3>
                     <br>
                     <ul>
@@ -59,7 +57,7 @@
                         <li> Humidity: </li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="card" id="dayThree">
                     <h3> Date:</h3>
                     <br>
                     <ul>
@@ -68,7 +66,7 @@
                         <li> Humidity: </li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="card" id="dayFour">
                     <h3> Date:</h3>
                     <br>
                     <ul>
@@ -77,7 +75,7 @@
                         <li> Humidity: </li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="card" id="dayFive">
                     <h3> Date:</h3>
                     <br>
                     <ul>
